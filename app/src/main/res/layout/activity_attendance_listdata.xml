@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pagebg"
+    tools:context=".AttendanceListdata">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lab Status"
+            android:textAlignment="center"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            >
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                android:layout_marginTop="120dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+                <TableRow android:background="@color/yellow"  android:padding="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TeacherName" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Labs" />
+
+                </TableRow>
+                <TableRow  android:padding="5dp">
+                    <TextView
+                        android:id="@+id/tv_atv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Abha"
+                        />
+
+                    <Spinner
+                        android:id="@+id/sp_at1"
+                        android:layout_width="30px"
+                        android:layout_height="50px"
+                        android:layout_weight="1"
+                         />
+                </TableRow>
+                <TableRow  android:padding="5dp">
+                    <TextView
+                        android:id="@+id/tv_atv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Salman"
+                        />
+                    <Spinner
+                        android:id="@+id/sp_at2"
+                        android:layout_width="30px"
+                        android:layout_height="50px"
+                        android:layout_weight="1"
+                         />
+
+                </TableRow>
+
+
+                <TableRow  android:padding="5dp">
+                    <TextView
+                        android:id="@+id/tv_at3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Harshad"
+                        />
+                    <Spinner
+                        android:id="@+id/sp_at3"
+                        android:layout_width="30px"
+                        android:layout_height="50px"
+                        android:layout_weight="1"
+                        android:text="INACTIVE" />
+
+                </TableRow>
+                <TableRow  android:padding="5dp">
+                    <TextView
+                        android:id="@+id/tv_at4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Aditya"
+                        />
+                    <Spinner
+                        android:id="@+id/sp_at4"
+                        android:layout_width="30px"
+                        android:layout_height="50px"
+                        android:layout_weight="1"
+                        android:text="INACTIVE" />
+
+                </TableRow>
+                <TableRow  android:padding="5dp">
+                    <TextView
+                        android:id="@+id/tv_at5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Salim"
+                        />
+                    <Spinner
+                        android:id="@+id/sp_at5"
+                        android:layout_width="30px"
+                        android:layout_height="50px"
+                        android:layout_weight="1"
+                        android:text="INACTIVE" />
+
+                </TableRow>
+                <TableRow  android:padding="5dp">
+                    <TextView
+                        android:id="@+id/tv_at6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Manish"
+                        />
+                    <Spinner
+                        android:id="@+id/sp_at6"
+                        android:layout_width="30px"
+                        android:layout_height="50px"
+                        android:layout_weight="1"
+                        android:text="INACTIVE" />
+
+                </TableRow>
+                <TableRow  android:padding="5dp">
+                    <TextView
+                        android:id="@+id/tv_at7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Suparna"
+                        />
+                    <Spinner
+                        android:id="@+id/sp_at7"
+                        android:layout_width="30px"
+                        android:layout_height="50px"
+                        android:layout_weight="1"
+                        android:text="INACTIVE" />
+
+                </TableRow>
+                <TableRow  android:padding="5dp">
+                    <TextView
+                        android:id="@+id/tv_at8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        />
+                    <Spinner
+                        android:id="@+id/sp_at8"
+                        android:layout_width="30px"
+                        android:layout_height="50px"
+                        android:layout_weight="1"
+                        android:text="INACTIVE" />
+
+                </TableRow>
+                <TableRow  android:padding="5dp">
+                    <TextView
+                        android:id="@+id/tv_at9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        />
+                    <Spinner
+                        android:id="@+id/sp_at9"
+                        android:layout_width="30px"
+                        android:layout_height="50px"
+                        android:layout_weight="1"
+                        android:text="INACTIVE" />
+
+                </TableRow>
+                <TableRow  android:padding="5dp">
+                    <TextView
+                        android:id="@+id/tv_at10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        />
+                    <Spinner
+                        android:id="@+id/sp_at10"
+                        android:layout_width="30px"
+                        android:layout_height="50px"
+                        android:layout_weight="1"
+                        android:text="INACTIVE" />
+
+                </TableRow>
+                <TableRow  android:padding="5dp">
+                    <TextView
+                        android:id="@+id/tv_at11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        />
+                    <Spinner
+                        android:id="@+id/sp_at11"
+                        android:layout_width="30px"
+                        android:layout_height="50px"
+                        android:layout_weight="1"
+                        android:text="INACTIVE" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="0dp"
+                    android:id="@+id/btattend"
+                    android:background="@drawable/custombutton2"
+                    android:text="Attendance"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btbkat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/custombutton2"
+                android:text="Back" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

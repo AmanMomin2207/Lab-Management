@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:name=".GlobalData"
+        android:allowBackup="true"
+        android:icon="@drawable/sitlog"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/sitlog"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LabManagement">
+        <activity
+            android:name=".AttendanceListdata"
+            android:exported="false" />
+        <activity
+            android:name=".LabDetails"
+            android:exported="false" />
+        <activity
+            android:name=".SendMail"
+            android:exported="false" />
+        <activity
+            android:name=".StudentAttendance"
+            android:exported="false" />
+        <activity
+            android:name=".Listview"
+            android:exported="false" />
+        <activity
+            android:name=".ViewLabDetails"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherDetails"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Splashscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterUsers"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
